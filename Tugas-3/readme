@@ -1,3 +1,32 @@
 Ilham Fadhlur Rahman
+120140125
+Teknik Informatika
+Pengembangan Aplikasi Mobile - RA
 
-<img src="./assets/adaptive-icon.png" width="200px">
+Tugas 3 Pengembangan Aplikasi Mobile
+
+_Hiling.id_
+
+Aplikasi ini adalah aplikasi sederhana untuk mencari sebuah jadwal pesawat. Di dalamnya terdapat halaman pertama yang berisi asal bandara, tujuan bandara, dan tanggal keberangkatan. Pada halaman kedua berisi hasil dari pencarian jadwal berdasarkan parameter pada formular.
+
+package :  
+"@expo/webpack-config": "^0.17.0",
+"@react-navigation/native": "^6.0.13",
+"@react-navigation/native-stack": "^6.9.1",
+"expo": "~46.0.16",
+"expo-status-bar": "~1.4.0",
+"react": "18.0.0",
+"react-dom": "18.0.0",
+"react-native": "0.69.6",
+"react-native-vector-icons": "^9.2.0",
+"react-native-web": "~0.18.7"
+
+Link GitHub : https://github.com/CaamVilvactDJavu/Pengembangan-Aplikasi-Mobile/tree/main/Tugas-3
+Link Download Aplikasi :
+
+tutorial meng-install aplikasi :
+
+1. Klik link yang ada di atas
+2. Tunggu proses mendownload apk
+3. Setelah download selesai, aplikasi sudah siap untuk di-install
+4. Setelah selesai di-install, aplikasi siap untuk dijalankan
