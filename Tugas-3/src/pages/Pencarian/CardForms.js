@@ -1,6 +1,6 @@
-import { Component } from "react";
+import Form from "./Form.js";
 import { StyleSheet, Button, View } from "react-native";
-import FormTextInput from "./FormTextInput.js";
+import { Component } from "react";
 
 class CardForms extends Component {
   search() {
@@ -11,31 +11,31 @@ class CardForms extends Component {
       <View style={styles.wrapper}>
         <View style={styles.card}>
           <View style={[styles.mb3]}>
-            <FormTextInput
-              label="Lokasi Keberangkatan"
+            <Form
               placeholder="Masukkan lokasi keberangkatan"
               icon="plane-departure"
+              label="Lokasi Keberangkatan"
             />
           </View>
           <View style={[styles.mb3]}>
-            <FormTextInput
-              label="Lokasi Tujuan"
-              placeholder="Masukan lokasi tujuan"
+            <Form
               icon="plane-arrival"
+              placeholder="Masukan lokasi tujuan"
+              label="Lokasi Tujuan"
             />
           </View>
           <View style={[styles.mb3]}>
-            <FormTextInput
-              label="Tanggal Keberangkatan"
+            <Form
               placeholder="Masukan tanggal keberangkatan"
               icon="calendar"
+              label="Tanggal Keberangkatan"
             />
           </View>
           <View style={[styles.mb3]}>
             <Button
-              title="CARI"
-              color="#E47D24"
+              color="#3C4048"
               onPress={() => this.search()}
+              title="Cari"
             />
           </View>
         </View>
@@ -44,26 +44,26 @@ class CardForms extends Component {
   }
 }
 
-const styles = StyleSheet.creat({
-  wrapper: {
-    paddingHorizontal: 34,
-    marginTop: 88,
-  },
+const styles = StyleSheet.create({
   mb3: {
     marginBottom: 18,
   },
   card: {
-    backgroundColor: "#fff",
     padding: 18,
-    borderRadius: 8,
     shadowColor: "#000",
+    borderRadius: 8,
+    backgroundColor: "#fff",
     shadowOffset: {
-      width: 3,
       height: 3,
+      width: 3,
     },
+    elevation: 4,
     shadowOpacity: 0.2,
     shadowRadius: 8,
-    elevation: 4,
+  },
+  wrapper: {
+    marginTop: 88,
+    paddingHorizontal: 34,
   },
 });
 

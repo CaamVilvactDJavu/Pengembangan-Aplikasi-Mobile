@@ -1,20 +1,19 @@
-import { Component } from "react";
-import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Search from "./pages/Search/index.js";
-import SearchResult from "./pages/SearchResult/index.js";
-import { PlatformColor } from "react-native";
+import Search from "./pages/Pencarian/index.js";
+import { NavigationContainer } from "@react-navigation/native";
+import { Component } from "react";
+import SearchResult from "./pages/HasilPencarian/index.js";
 
-const Stack = createNativeStackNavigator();
 const options = { headerShown: false };
+const Stack = createNativeStackNavigator();
 
 class Navigator extends Component {
   render() {
     return (
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Search" screenOptions={options}>
-          <Stack.Screen name="Search" component={Search} />
-          <Stack.Screen name="SearchResult" component={SearchResult} />
+          <Stack.Screen component={Search} name="Search" />
+          <Stack.Screen component={SearchResult} name="SearchResult" />
         </Stack.Navigator>
       </NavigationContainer>
     );
